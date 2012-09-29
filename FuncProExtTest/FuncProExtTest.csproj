@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\..\Moq.4.0.10827\NET40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -49,6 +52,7 @@
     <Compile Include="IEnumExtTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IntExtTest.cs" />
+    <Compile Include="StringExtTest.cs" />
     <Compile Include="TestExt.cs" />
   </ItemGroup>
   <ItemGroup>
