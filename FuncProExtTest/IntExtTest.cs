@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 using FuncProExt;
 
 namespace FuncProExtTest
@@ -12,7 +13,7 @@ namespace FuncProExtTest
             const int anyInt = 3;
             var count = 0;
 
-            var result = anyInt.times(() => { count++; });
+            var result = anyInt.Times(() => { count++; });
             
             result.should_be(anyInt);
             count.should_be(anyInt);
@@ -24,11 +25,10 @@ namespace FuncProExtTest
             const int anyInt = 3;
             var count = 0;
 
-            var result = anyInt.times(i => { count += i; });
+            var result = anyInt.Times(i => { count += i; });
 
             result.should_be(anyInt);
             count.should_be(6);
-            
         }
     }
 }
